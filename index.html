@@ -8,7 +8,23 @@
 </head>
 <body>
   <h1>Información sobre Países</h1>
+
+  <!-- Contenedor donde pintamos las banderas -->
   <div id="countries-list"></div>
+
+  <!-- Modal / ventana flotante -->
+  <div id="country-modal" class="modal hidden">
+    <div class="modal__content">
+      <button id="modal-close" class="modal__close">✖</button>
+      
+      <img id="modal-flag" class="modal__flag" src="" alt="Bandera" />
+      <h2 id="modal-name" class="modal__name"></h2>
+
+      <p><strong>Capital:</strong> <span id="modal-capital"></span></p>
+      <p><strong>Población:</strong> <span id="modal-population"></span></p>
+      <p><strong>Se conduce por el lado:</strong> <span id="modal-car-side"></span></p>
+    </div>
+  </div>
 
   <script src="./js/script.js"></script>
 </body>
